@@ -6,12 +6,15 @@ name: Journal Agent
 version: "0.2.51.1"
 icon: https://raw.githubusercontent.com/AlexPosazhe/umbrel-private-apps/main/alex-remote-desktop-commander/icon.svg
 
-tagline: Remote file and terminal access for ChatGPT
+tagline: Capture, structure and preserve your events
 
 description: >-
-  Runs Desktop Commander Remote as an Umbrel-managed service.
-  It provides authorized remote access to selected files and terminal
-  capabilities through Desktop Commander's Remote MCP service.
+  Journal Agent connects ChatGPT to a private journal stored locally on your
+  Umbrel, helping you capture, structure and preserve events, notes and context.
+  Journaling is not tied to a single input method: use ChatGPT to turn what you
+  share into organized records for future reference.
+  Built on Desktop Commander Remote, it provides authorized access to your
+  local journal and a foundation for future journal workflows and automation.
 
 developer: wonderwhy-er
 website: https://desktopcommander.app
