@@ -16,13 +16,13 @@ description: >-
   Built on Desktop Commander Remote, it provides authorized access to your
   local journal and a foundation for future journal workflows and automation.
 
-developer: wonderwhy-er
-website: https://desktopcommander.app
+developer: Alex
+website: https://github.com/AlexPosazhe/umbrel-private-apps
 
 dependencies: []
 
-repo: https://github.com/wonderwhy-er/DesktopCommanderMCP
-support: https://github.com/wonderwhy-er/DesktopCommanderMCP/issues
+repo: https://github.com/AlexPosazhe/umbrel-private-apps
+support: https://github.com/AlexPosazhe/umbrel-private-apps/issues
 
 port: 3000
 gallery: []
