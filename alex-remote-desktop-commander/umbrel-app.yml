@@ -1,0 +1,30 @@
+manifestVersion: 1
+
+id: alex-remote-desktop-commander
+category: files
+name: Remote Desktop Commander
+version: "0.2.51"
+
+tagline: Remote file and terminal access for ChatGPT
+
+description: >-
+  Runs Desktop Commander Remote as an Umbrel-managed service.
+  It provides authorized remote access to selected files and terminal
+  capabilities through Desktop Commander's Remote MCP service.
+
+developer: wonderwhy-er
+website: https://desktopcommander.app
+
+dependencies: []
+
+repo: https://github.com/wonderwhy-er/DesktopCommanderMCP
+support: https://github.com/wonderwhy-er/DesktopCommanderMCP/issues
+
+port: 3000
+gallery: []
+path: ""
+
+defaultPassword: ""
+
+releaseNotes: >-
+  Initial private Umbrel package for Remote Desktop Commander.
