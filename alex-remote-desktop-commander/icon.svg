@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFCF1"/>
+      <stop offset=".48" stop-color="#FCF8FC"/>
+      <stop offset="1" stop-color="#E6EDFF"/>
+    </linearGradient>
+    <linearGradient id="sound" gradientUnits="userSpaceOnUse" x1="160" y1="85" x2="199" y2="157">
+      <stop stop-color="#13BCEF"/>
+      <stop offset=".45" stop-color="#0065FF"/>
+      <stop offset="1" stop-color="#5800FF"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".66" cy=".7" r=".7">
+      <stop stop-color="#DFD0FF" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#F7F5FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ink" gradientUnits="userSpaceOnUse" x1="62" y1="77" x2="181" y2="193">
+      <stop stop-color="#13BCEF"/>
+      <stop offset=".42" stop-color="#0065FF"/>
+      <stop offset=".78" stop-color="#4900FF"/>
+      <stop offset="1" stop-color="#853AFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" fill="url(#paper)"/>
+  <rect width="256" height="256" fill="url(#glow)"/>
+  <g fill="none" stroke="url(#ink)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M119 168C118 160 119 133 119 116C119 90 101 82 66 82C51 82 44 85 44 97V170C44 173 45 175 49 175C82 173 110 180 127 200C128 201 129 201 130 199C153 175 179 175 213 175"/>
+    <path d="M150 111V139M174 88V156M197 107V145M218 121V133" stroke="url(#sound)" stroke-width="14"/>
+  </g>
+</svg>

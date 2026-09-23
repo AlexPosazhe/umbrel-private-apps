@@ -2,8 +2,9 @@ manifestVersion: 1
 
 id: alex-remote-desktop-commander
 category: files
-name: Remote Desktop Commander
-version: "0.2.51"
+name: Journal Agent
+version: "0.2.51.1"
+icon: https://raw.githubusercontent.com/AlexPosazhe/umbrel-private-apps/main/alex-remote-desktop-commander/icon.svg
 
 tagline: Remote file and terminal access for ChatGPT
 
@@ -27,4 +28,5 @@ path: ""
 defaultPassword: ""
 
 releaseNotes: >-
-  Initial private Umbrel package for Remote Desktop Commander.
+  Renamed to Journal Agent with a light, minimalist journal and sound-wave icon.
+  The app ID and Desktop Commander version remain unchanged.
