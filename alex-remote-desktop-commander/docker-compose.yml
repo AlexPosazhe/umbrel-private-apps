@@ -1,0 +1,29 @@
+version: "3.7"
+
+services:
+  server:
+    image: node:22-bookworm
+    user: "1000:1000"
+    init: true
+    restart: on-failure
+    stop_grace_period: 30s
+
+    environment:
+      HOME: /home/node
+
+    command:
+      - sh
+      - -lc
+      - exec npx -y @wonderwhy-er/desktop-commander@0.2.51 remote
+
+    volumes:
+      - rdc-home:/home/node
+
+    security_opt:
+      - no-new-privileges:true
+
+    cap_drop:
+      - ALL
+
+volumes:
+  rdc-home:
