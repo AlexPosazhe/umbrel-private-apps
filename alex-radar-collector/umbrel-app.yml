@@ -1,0 +1,33 @@
+manifestVersion: 1
+
+id: alex-radar-collector
+category: files
+name: Radar Collector
+version: "0.1.0"
+
+tagline: Collect management research reliably
+
+description: >-
+  Radar Collector is a small deterministic source collector for Management Radar.
+  It gathers new publications from configured RSS, HTML and sitemap sources,
+  deduplicates them by canonical URL, and stores candidates in the persistent
+  Management Radar inbox for later analysis by ChatGPT.
+  It does not use AI and does not make editorial decisions.
+
+developer: Alex
+website: https://github.com/AlexPosazhe/umbrel-private-apps
+
+dependencies: []
+
+repo: https://github.com/AlexPosazhe/umbrel-private-apps
+support: https://github.com/AlexPosazhe/umbrel-private-apps/issues
+
+port: 3000
+gallery: []
+path: ""
+
+defaultPassword: ""
+
+releaseNotes: >-
+  Initial MVP: six RSS/Atom sources, HBS HTML primary with sitemap audit,
+  SQLite deduplication and persistent JSONL output.
