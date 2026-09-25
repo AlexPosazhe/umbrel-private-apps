@@ -1,0 +1,29 @@
+version: "3.7"
+
+services:
+  server:
+    image: python:3.12-slim
+    user: "1000:1000"
+    init: true
+    restart: on-failure
+    stop_grace_period: 30s
+
+    environment:
+      PYTHONUNBUFFERED: "1"
+      MANAGEMENT_RADAR_DIR: /management-radar
+
+    command:
+      - sh
+      - -lc
+      - |
+        while [ ! -f /management-radar/collector/collector.py ]; do
+          echo "Waiting for Management Radar custom folder..."
+          sleep 10
+        done
+        exec python /management-radar/collector/collector.py
+
+    security_opt:
+      - no-new-privileges:true
+
+    cap_drop:
+      - ALL
