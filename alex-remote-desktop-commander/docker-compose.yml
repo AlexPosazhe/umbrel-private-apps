@@ -14,7 +14,7 @@ services:
     command:
       - sh
       - -lc
-      - exec npx -y @wonderwhy-er/desktop-commander@0.2.51 remote
+      - exec npx -y @wonderwhy-er/desktop-commander@0.2.52 remote
 
     volumes:
       - rdc-home:/home/node
