@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Journal Agent — состояние</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <main>
+    <header><span class="mark" aria-hidden="true">J</span><div><h1>Journal Agent</h1><p>Панель здоровья · Umbrel</p></div></header>
+    <section class="summary" aria-live="polite">
+      <span class="eyebrow">Общий статус</span>
+      <h2><span id="light" class="light"></span><span id="status">Ожидание проверки</span></h2>
+      <p id="explanation">Получаем состояние приложения…</p>
+      <button id="check" type="button">Проверить сейчас <span aria-hidden="true">↻</span></button>
+      <p id="action" class="action" role="status"></p>
+    </section>
+    <dl>
+      <div><dt>Desktop Commander</dt><dd id="version">—</dd></div>
+      <div><dt>RPC / Remote MCP</dt><dd id="rpc">Не проверен</dd></div>
+      <div><dt>Доступность /journal</dt><dd id="journal">Не проверена</dd></div>
+      <div><dt>Последняя успешная проверка</dt><dd id="success">Ещё не было</dd></div>
+      <div><dt>Uptime агента</dt><dd id="uptime">—</dd></div>
+      <div><dt>Последняя попытка</dt><dd id="checked">—</dd></div>
+    </dl>
+    <footer>Пока панель открыта, проверка раз в минуту читает первую строку канона через Remote MCP. Зелёный статус действует не дольше 90 секунд. Проверка не изменяет журнал.</footer>
+  </main>
+</body>
+</html>

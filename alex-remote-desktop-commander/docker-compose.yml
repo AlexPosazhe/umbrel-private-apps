@@ -1,6 +1,11 @@
 version: "3.7"
 
 services:
+  app_proxy:
+    environment:
+      APP_HOST: alex-remote-desktop-commander_server_1
+      APP_PORT: 3000
+
   server:
     image: node:22-bookworm
     user: "1000:1000"
@@ -14,10 +19,14 @@ services:
     command:
       - sh
       - -lc
-      - exec npx -y @wonderwhy-er/desktop-commander@0.2.52 remote
+      - >-
+        exec npx -y --package=@wonderwhy-er/desktop-commander@0.2.52
+        -c 'export JOURNAL_DC_ENTRY="$$(command -v desktop-commander)";
+        exec node /opt/journal-health/launcher.mjs'
 
     volumes:
       - rdc-home:/home/node
+      - ${APP_DATA_DIR}/health:/opt/journal-health:ro
 
     security_opt:
       - no-new-privileges:true
