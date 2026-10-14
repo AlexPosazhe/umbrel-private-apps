@@ -3,7 +3,7 @@ manifestVersion: 1
 id: alex-remote-desktop-commander
 category: files
 name: Journal Agent
-version: "0.2.51.1"
+version: "0.2.52.0"
 icon: https://raw.githubusercontent.com/AlexPosazhe/umbrel-private-apps/main/alex-remote-desktop-commander/icon.svg
 
 tagline: Capture, structure and preserve your events
