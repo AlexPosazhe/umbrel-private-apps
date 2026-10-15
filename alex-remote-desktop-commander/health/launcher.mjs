@@ -10,7 +10,7 @@ import { createServer } from './server.mjs';
 // device session volume; there is still just one Remote MCP agent process.
 const entry = await realpath(process.env.JOURNAL_DC_ENTRY);
 const pkg = JSON.parse(await readFile(path.resolve(path.dirname(entry), '../package.json'), 'utf8'));
-if (pkg.name !== '@wonderwhy-er/desktop-commander' || pkg.version !== '0.2.52') {
+if (pkg.name !== '@wonderwhy-er/desktop-commander' || pkg.version !== '0.3.0') {
   throw new Error('Unexpected Desktop Commander package');
 }
 let startedAt = 0, running = false, stopping = false;
