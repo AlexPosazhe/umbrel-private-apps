@@ -3,7 +3,7 @@ manifestVersion: 1
 id: alex-remote-desktop-commander
 category: files
 name: Journal Agent
-version: "0.2.52.1"
+version: "0.3.0"
 icon: https://raw.githubusercontent.com/AlexPosazhe/umbrel-private-apps/main/alex-remote-desktop-commander/icon.svg
 
 tagline: Capture, structure and preserve your events
@@ -33,4 +33,4 @@ defaultPassword: ""
 releaseNotes: >-
   Added a minimal health panel with a real Remote MCP read operation, journal
   availability, Desktop Commander version, agent uptime and manual checks.
-  A successful result expires after 90 seconds. Desktop Commander remains 0.2.52.
+  A successful result expires after 90 seconds. Desktop Commander 0.3.0.
