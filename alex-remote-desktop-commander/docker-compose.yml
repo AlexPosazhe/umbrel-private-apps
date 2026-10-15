@@ -20,7 +20,7 @@ services:
       - sh
       - -lc
       - >-
-        exec npx -y --package=@wonderwhy-er/desktop-commander@0.2.52
+        exec npx -y --package=@wonderwhy-er/desktop-commander@0.3.0
         -c 'export JOURNAL_DC_ENTRY="$$(command -v desktop-commander)";
         exec node /opt/journal-health/launcher.mjs'
 
